@@ -18,7 +18,9 @@ def list_bucket_objects(bucket_name):
         print('Credentials not available.')
     except PartialCredentialsError:
         print('Incomplete credentials provided.')
-if __name__ == '__main__':
-    bucket_name = 'stelstelbucket'
 
-list_bucket_objects(bucket_name)
+
+if __name__ == '__main__':
+    bucket_name = 'stelstelbucket' ### Change this to your bucket name ###
+    print("")
+    list_bucket_objects(bucket_name)
